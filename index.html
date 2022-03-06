@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>퀴즈 어플 만들기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!--시작-->
+      <section class="quiz_box box">
+        <div class="box_head">
+          <h2 class="title">퀴즈</h2>
+          <div class="timer">
+            <span class="text">시간</span>
+            <span class="time"></span>
+          </div>
+          <div class="line"></div>
+        </div>
+        <ol class="box_body">
+          <li class="quiz_question"></li>
+          <li class="options"></li>
+        </ol>
+        <div class="box_foot">
+          <div class="totals"></div>
+          <button type="button" class="js-next">다음 문제</button>
+        </div>
+      </section>
+      <button type="button" class="js-start">퀴즈 시작</button>
+
+      <!--결과-->
+      <aside class="result_box box">
+        <h2 class="title">퀴즈를 완료하였습니다!</h2>
+        <span class="scores"> </span>
+        <button type="button" class="js-restart">퀴즈 다시풀기</button>
+      </aside>
+    </div>
+    <script src="quiz.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
