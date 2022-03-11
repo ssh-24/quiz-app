@@ -221,9 +221,7 @@
         cancelAnimationFrame(this.liner);
         this.setFailed();
       } else {
-        this.liner = requestAnimationFrame(() => {
-          setTimeout(this.setLine.bind(this), 1.66);
-        });
+        this.liner = requestAnimationFrame(this.setLine.bind(this));
       }
     }
   }
